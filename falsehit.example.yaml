@@ -1,0 +1,15 @@
+# Settings for `falsehit serve`. Set FALSEHIT_CONFIG to this file's path.
+# Without FALSEHIT_UPSTREAM_BASE_URL the service answers from the offline fake upstream.
+tau: 0.60              # copy from `falsehit calibrate` (data/calibration.json)
+ttl_seconds: 7200
+breaker_failures: 3
+breaker_reset_seconds: 30
+tenants:
+  acme:
+    api_key: change-me-acme
+    rpm: 60
+    monthly_budget_usd: "100"
+  globex:
+    api_key: change-me-globex
+    rpm: 120
+    monthly_budget_usd: "250"

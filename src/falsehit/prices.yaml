@@ -1,0 +1,8 @@
+# USD per one million tokens.
+models:
+  support-large:
+    input: 3.00
+    output: 15.00
+  support-small:
+    input: 0.25
+    output: 1.25
